@@ -1,0 +1,63 @@
+When performing bivariate or multivariate correlation between predictors variable vs target variables, these are tips to consider 
+  1. Numerical vs. Numerical Data
+      Goal: Examine relationships between two or more continuous variables.
+      Types of Charts:
+          Scatter Plot:
+            Ideal for visualizing relationships between two numerical variables.
+            Add a regression line if you want to emphasize the trend.
+          Pair Plot (Seaborn pairplot):
+            Visualizes relationships across all numerical variables in a dataset, including histograms for univariate analysis.
+          Heatmap of Correlation Matrix:
+            Useful for many numerical variables.
+            Displays Pearson or Spearman correlation coefficients as color intensities.
+          Bubble Chart:
+            Adds a third numerical dimension by using bubble size.
+  2. Numerical vs. Categorical Data
+      Goal: Explore how a numerical variable varies across categories.
+       Types of Charts:
+          Box Plot:
+            Shows distribution, median, and variability for a numerical variable across categories.
+          Violin Plot:
+            Combines a box plot with a kernel density plot for a richer view of distributions.
+          Bar Plot (with Aggregates):
+            Summarizes numerical data (e.g., mean or median) for each category.
+          Strip Plot / Swarm Plot:
+            Displays all data points for each category, highlighting individual observations.
+  3. Categorical vs. Categorical Data
+        Goal: Analyze relationships between two categorical variables.
+       Types of Charts:
+          Stacked Bar Chart:
+            Shows the composition of one category within another.
+          Mosaic Plot:
+            Visualizes proportions of one category against another.
+          Heatmap (with counts):
+            Displays frequency or proportions as a grid, with categories on the axes.
+          Grouped Bar Chart:
+              Useful for side-by-side comparisons of category counts.
+
+    4. Multivariate Analysis
+      Goal: Explore interactions among more than two variables.
+      Charts:
+        Heatmap:
+          For correlation matrices involving multiple variables.
+        3D Scatter Plot:
+          Ideal for visualizing relationships among three numerical variables.
+        Facet Grid (Seaborn FacetGrid):
+          Plots multiple small graphs based on one or more categorical variables.
+        Parallel Coordinates Plot:
+          Visualizes trends in multivariate numerical data.
+        Radar Chart (Spider Plot):
+          Compares multiple numerical variables for different categories.
+        Clustered Heatmap:
+          Combines hierarchical clustering and heatmaps for groups of variables.
+
+Key Considerations for Chart Selection
+Data Type: Match the chart to the types of variables (categorical, numerical).
+Purpose:
+Show relationships? Use scatter plots or correlation heatmaps.
+Compare distributions? Use box plots or violin plots.
+Explore composition? Use stacked bar or mosaic plots.
+Data Volume:
+Large datasets may need aggregation (e.g., heatmaps).
+Readability:
+Avoid overcrowding by limiting variables per chart.
